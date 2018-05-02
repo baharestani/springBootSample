@@ -6,10 +6,19 @@ import javax.persistence.Id;
 @Entity
 public class Book {
 
-    @Id
-    public Integer Id;
+	@Id
+	public Integer Id;
 
-    public String Title;
+	public String Title;
+
+	public Book() {
+	}
+
+	public Book(Integer id, String title) {
+		this.Id = id;
+		this.Title = title;
+	}
+
 
 
 }
